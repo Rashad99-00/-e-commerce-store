@@ -1,5 +1,6 @@
 export const API_ORIGIN =
-  import.meta.env.VITE_ASSET_BASE_URL;
+  import.meta.env.VITE_ASSET_BASE_URL ??
+  "";
 
 export const getImageSrc = (
   url?: string | null
