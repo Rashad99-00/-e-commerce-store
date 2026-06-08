@@ -1,5 +1,5 @@
 export const API_ORIGIN =
-  "http://161.97.154.119";
+  import.meta.env.VITE_ASSET_BASE_URL;
 
 export const getImageSrc = (
   url?: string | null
