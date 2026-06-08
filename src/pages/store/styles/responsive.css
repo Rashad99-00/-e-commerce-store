@@ -1,0 +1,157 @@
+@media (max-width: 960px) {
+  .market-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalog-toolbar,
+  .product-detail {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .catalog-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail {
+    display: flex;
+  }
+
+  .detail-media {
+    height: 390px;
+  }
+
+  .detail-info {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .market-hero {
+    background-position: center bottom;
+    background-size: 100% auto;
+    min-height: 640px;
+  }
+
+  .market-hero::before {
+    background:
+      linear-gradient(
+        180deg,
+        #18231f 0%,
+        #18231f 45%,
+        rgb(24 35 31 / 10%) 100%
+      );
+  }
+
+  .market-hero h1 {
+    font-size: 40px;
+  }
+
+  .market-benefits,
+  .market-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .market-benefits {
+    gap: 20px;
+  }
+
+  .market-benefits div {
+    border-right: 0;
+    padding-left: 0;
+  }
+
+  .home-slider {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .home-slide {
+    min-height: 320px;
+  }
+
+  .home-slide-content {
+    margin-left: 24px;
+    padding: 28px;
+  }
+
+  .home-slide-content h2 {
+    font-size: 30px;
+  }
+
+  .home-slide img {
+    opacity: 0.48;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .market-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-toolbar input,
+  .catalog-toolbar select {
+    width: 100%;
+  }
+
+  .catalog-price-range {
+    grid-template-columns: 1fr;
+  }
+
+  .home-slider {
+    margin-top: 28px;
+    padding: 0 14px 38px;
+  }
+
+  .home-slide {
+    min-height: 320px;
+  }
+
+  .home-slide-content {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 22px;
+  }
+
+  .home-slide-content h2 {
+    font-size: 24px;
+  }
+
+  .home-slide-content span {
+    font-size: 13px;
+  }
+
+  .home-slide img {
+    bottom: auto;
+    height: 100%;
+    opacity: 0.36;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .home-slide-actions {
+    gap: 8px;
+  }
+
+  .home-slide-badge,
+  .home-slide-action {
+    padding: 11px 13px;
+  }
+
+  .home-slider-arrow {
+    bottom: 12px;
+    top: auto;
+    transform: none;
+  }
+
+  .home-slider-prev {
+    left: 18px;
+  }
+
+  .home-slider-next {
+    right: 18px;
+  }
+}

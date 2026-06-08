@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fa;
+  color: #111827;
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.market-product-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 1fr)
+  );
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.market-product {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+.market-product:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+}
+
+.market-product-media {
+  height: 220px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.market-product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.market-product-info {
+  padding: 18px;
+}
+
+.market-product-info p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.market-product-info h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.market-product-info strong {
+  color: #059669;
+  font-size: 20px;
+}
+
+.detail-link {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #059669;
+  color: white;
+  font-size: 14px;
+}
+
+.catalog-page {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+.catalog-title h1 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.market-kicker {
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.catalog-toolbar {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.detail-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #059669;
+  font-weight: 600;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+}
+
+.detail-media {
+  background: #f3f4f6;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.detail-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-info h1 {
+  font-size: 40px;
+  margin: 16px 0;
+}
+
+.detail-price {
+  display: block;
+  font-size: 32px;
+  color: #059669;
+  margin-bottom: 24px;
+}
+
+.detail-description {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.stock-line {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.available-label {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 600;
+}
+
+.market-benefits {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 0 24px;
+}
+
+.market-benefits div {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.market-benefits strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.market-benefits span {
+  color: #6b7280;
+}
+
+.market-section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+.market-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.market-heading h2 {
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.market-heading a {
+  color: #059669;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .market-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .market-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .detail-info h1 {
+    font-size: 28px;
+  }
+}
